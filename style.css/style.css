@@ -7,4 +7,15 @@
 
  :root {
     --turquesa: #6BBCB8;
+    --dorado: #C9A84C;
+    --cafe: #7B5B3A;
+    --negro: #1A1A1A;
+    --blanco: #FFFFFF;
+    --gris-claro: #F9F9F9;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: var(--negro);
+    background-color: var(--blanco);
 }
