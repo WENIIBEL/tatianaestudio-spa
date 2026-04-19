@@ -4,3 +4,7 @@
     boz-sizing: border-box;
 
 }
+
+ :root {
+    --turquesa: #6BBCB8;
+}
