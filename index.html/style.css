@@ -32,10 +32,9 @@ nav {
     top: 0;
 }
 
-nav .logo h1 {
-    font-size: 20px;
-    color: var(--cafe);
-    letter-spacing: 2px;
+nav .logo img {
+    width: 120px;
+    height: auto;
 }
 
 nav ul {
