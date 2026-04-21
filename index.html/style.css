@@ -54,3 +54,67 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--turquesa);
 }
+
+/* HERO DE PÁGINAS INTERNAS */
+.pagina-hero {
+    background-color: var(--crema);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.pagina-hero h1 {
+    font-size: 40px;
+    color: var(--cafe);
+    letter-spacing: 3px;
+}
+
+.pagina-hero p {
+    color: var(--negro);
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* TARJETAS DE SERVICIOS */
+.servicios-detalle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 60px 50px;
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    border: 1px solid var(--dorado);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    color: var(--cafe);
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: var(--negro);
+    margin-bottom: 15px;
+}
+
+.precio {
+    background-color: var(--turquesa);
+    color: var(--blanco);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+header {
+    padding: 20px 50px;
+    text-align: left;
+}
+
+header img {
+    width: 180px;
+    height: auto;
+}
