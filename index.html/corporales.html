@@ -1,25 +1,72 @@
-nav {
-    background-color: var(--blanco);
-    padding: 15px 50px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporales - Tatiana Restrepo Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-}
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Tatiana Restrepo Studio">
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-nav ul li a {
-    text-decoration: none;
-    color: var(--negro);
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
+    <!-- HERO -->
+    <section class="pagina-hero">
+        <h1>Servicios Corporales</h1>
+        <p>Masajes y tratamientos para tu bienestar</p>
+    </section>
 
-nav ul li a:hover {
-    color: var(--turquesa);
-}
+    <!-- FOTO DE TATIANA TRABAJANDO -->
+    <section class="foto-servicio">
+        <img src="images/corporal-trabajo.jpg" 
+        alt="Tatiana realizando masaje corporal">
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios-detalle">
+
+        <div class="tarjeta">
+            <h3>Masajes Corporales</h3>
+            <p>Relájate y recupera tu energía con 
+            nuestros masajes corporales personalizados.</p>
+            <span class="precio">Desde $30.000</span>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Masajes de Moldeamiento</h3>
+            <p>Moldea y tonifica tu cuerpo con 
+            nuestro plan de sesiones.</p>
+            <span class="precio">10 sesiones x $190.000</span>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Drenaje Linfático</h3>
+            <p>Elimina toxinas y reduce la retención 
+            de líquidos con este tratamiento especializado.</p>
+            <span class="precio">5 sesiones x $150.000</span>
+        </div>
+
+    </section>
+
+    <!-- BOTÓN WHATSAPP -->
+    <section id="contacto">
+        <h2>¿Lista para tu cita?</h2>
+        <a href="https://wa.me/56958424131" 
+        class="boton-whatsapp" 
+        target="_blank">
+            💬 Agenda por WhatsApp
+        </a>
+    </section>
+
+</body>
+</html>
