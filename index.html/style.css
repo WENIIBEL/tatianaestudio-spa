@@ -64,7 +64,7 @@ nav ul li a:hover {
 .pagina-hero p {
     color: var(--negro);
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 25px;
 }
 
 /* TARJETAS DE SERVICIOS */
@@ -89,9 +89,10 @@ nav ul li a:hover {
 }
 
 .tarjeta p {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--negro);
     margin-bottom: 15px;
+    font-weight: 600
 }
 
 .precio {
@@ -149,9 +150,11 @@ header img {
     margin-bottom: 0px;
 }
 #inicio p {
-    font-size: 18px;
+    font-size: 25px;
     color: var(--negro);
     margin-bottom: 30px;
+    font-weight: 500;
+    
 }
 
 .boton {
@@ -245,16 +248,78 @@ body {
     position: relative;
 }
 
-.m-plus-rounded-1c-regular {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+/* fuente*/
 
 body {
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     color: var(--negro);
     background-color: var(--blanco);
+}
+
+/* ===== RESPONSIVE MÓVIL ===== */
+@media (max-width: 768px) {
+
+    /* NAVEGACIÓN */
+    nav {
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* HERO */
+    #inicio {
+        padding: 50px 20px;
+    }
+
+    #inicio h2 {
+        font-size: 28px;
+    }
+
+    #inicio .hero img {
+        width: 150px;
+    }
+
+    /* CAJAS DE SERVICIOS */
+    .cajas {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* TARJETAS */
+    .servicios-detalle {
+        grid-template-columns: 1fr;
+        padding: 30px 20px;
+    }
+
+    /* FOTO SERVICIO */
+    .foto-servicio img {
+        width: 100%;
+        height: 250px;
+    }
+
+    /* HERO PÁGINAS INTERNAS */
+    .pagina-hero {
+        padding: 40px 20px;
+    }
+
+    .pagina-hero h1 {
+        font-size: 28px;
+    }
+
+    /* CONTACTO */
+    #contacto {
+        padding: 40px 20px;
+    }
+
+    #contacto h2 {
+        font-size: 24px;
+    }
+
 }
 
 
