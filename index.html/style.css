@@ -367,3 +367,103 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== NOSOTROS ===== */
+
+/* HISTORIA */
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 60px 50px;
+    align-items: center;
+}
+
+.historia-texto h2 {
+    font-size: 36px;
+    color: var(--cafe);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.historia-texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--negro);
+}
+
+.historia-foto img {
+    width: 100%;
+    height: 695px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* GALERÍA */
+.galeria-nosotros {
+    padding: 60px 50px;
+    text-align: center;
+    background-color: var(--crema);
+}
+
+.galeria-nosotros h2 {
+    font-size: 36px;
+    color: var(--cafe);
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.fotos-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* REDES Y CONTACTO */
+.historia ~ #contacto p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--negro);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .historia {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .historia-foto img {
+        height: 300px;
+    }
+
+    .galeria-nosotros {
+        padding: 40px 20px;
+    }
+
+    .fotos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.foto-texto {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    color: var(--cafe);
+    font-weight: 500;
+    padding: 20px 40px;
+    line-height: 1.8;
+    font-style: italic;
+}
